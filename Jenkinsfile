@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Code Validation..'
 		sh 'mvn validate'
+		sh ' mvn compile'    
             }
         }
         stage('UnitTest') {
